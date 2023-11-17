@@ -1,0 +1,7 @@
+@mixin button {
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+@mixin buttonOnHover {
+  transform: scale(98%);
+}

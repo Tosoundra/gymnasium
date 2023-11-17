@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'HeadingNow-84Regular';
+  src: url('./HeadingNow-84Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'HeadingNow-45Medium';
+  src: url('./HeadingNow-45Medium.woff2') format('woff2');
+}

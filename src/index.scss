@@ -1,0 +1,25 @@
+@use './styles/elementVariables.scss';
+@import url('./styles/vendors/normalize.css');
+@import url('./assets/fonts/Heading/font.css');
+@import url('./assets/fonts/GothamPro/font.css');
+
+:root {
+  font-family: HeadingNow-84Regular, HeadingNow-45Medium, GothaProBold, GothaProLight,
+    GothaProMedium, GothaProRegular;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+button {
+  @include elementVariables.button;
+
+  &:hover {
+    @include elementVariables.buttonOnHover;
+  }
+}

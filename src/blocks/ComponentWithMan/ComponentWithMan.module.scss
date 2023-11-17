@@ -1,0 +1,64 @@
+.title-container {
+  background-color: #000;
+  padding: 104px 0;
+
+  &__title {
+    text-align: center;
+    color: #fff;
+
+    font-size: 85px;
+    font-weight: 400;
+    line-height: 91px;
+    text-transform: uppercase;
+    &::after {
+      content: ' power';
+      color: #ed6d2d;
+    }
+  }
+}
+
+.componentWithMan {
+  color: #fff;
+  background: url('../../assets/images/main_back_two.png'), 50% / cover no-repeat;
+  padding: 133px 0 212px 173px;
+
+  &__title {
+    margin-bottom: 15px;
+
+    color: #000;
+    font-family: HeadingNow-45Medium;
+    font-size: 74px;
+    font-weight: 500;
+    line-height: 46.5px;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    margin-bottom: 74px;
+    color: #fff;
+    font-family: HeadingNow-84Regular;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46.5px;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    margin-bottom: 84px;
+    list-style: disc;
+
+    font-family: Gotham Pro;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+
+    & > li:first-child {
+      margin-top: 25px;
+    }
+  }
+
+  &__element {
+    margin-left: 30px;
+  }
+}

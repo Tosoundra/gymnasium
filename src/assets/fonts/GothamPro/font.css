@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'GothaProBold';
+  src: url('./GothaProBol.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'GothaProLight';
+  src: url('./GothaProLig.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'GothaProMedium';
+  src: url('./GothaProMed.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'GothaProRegular';
+  src: url('./GothaProReg.woff2') format('woff2');
+}

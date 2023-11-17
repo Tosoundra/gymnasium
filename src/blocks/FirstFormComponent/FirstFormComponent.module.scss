@@ -1,0 +1,29 @@
+.firstFormComponent {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  height: 643px;
+  background: #000;
+
+  &__title {
+    color: #fff;
+    font-family: HeadingNow-84Regular;
+    font-size: 77px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 75.5px; /* 98.052% */
+    text-transform: uppercase;
+
+    &::after {
+      content: 'STRENGTHS';
+      color: #ed6d2d;
+      font-family: HeadingNow-84Regular;
+      font-size: 77px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 75.5px;
+      text-transform: uppercase;
+    }
+  }
+}

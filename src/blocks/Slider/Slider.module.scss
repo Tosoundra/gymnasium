@@ -1,0 +1,14 @@
+.slider {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+
+  & > img:first-child {
+    width: 100%;
+  }
+
+  &__item {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+  }
+}
