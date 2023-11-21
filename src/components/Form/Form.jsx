@@ -2,7 +2,7 @@ import styles from './Form.module.scss';
 
 export const Form = ({ title }) => {
   return (
-    <form className={styles.form}>
+    <form action="../../assets/constants/sendMail.php" method="POST" className={styles.form}>
       <h1 className={styles.form__title}>{title}</h1>
       <input className={styles.form__input} type="text" placeholder="Name" name="name" id="name" />
       <input

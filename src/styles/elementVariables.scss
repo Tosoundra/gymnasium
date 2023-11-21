@@ -1,3 +1,7 @@
+@mixin paddings {
+  padding-left: 170px;
+}
+
 @mixin button {
   cursor: pointer;
   transition: all 0.2s ease-out;

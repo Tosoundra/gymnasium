@@ -1,0 +1,42 @@
+.mentor {
+  position: relative;
+  width: 532px;
+  height: 408px;
+  padding: 37px;
+  display: flex;
+  border-radius: 24px;
+  flex: 0 0 auto;
+  scroll-snap-align: end;
+  scroll-snap-stop: always;
+
+  background-color: #000;
+
+  &__name {
+    display: inline-block;
+    margin-bottom: 71px;
+
+    font-family: HeadingNow-45Medium;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 43px;
+  }
+
+  &__list {
+    max-width: 158px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    font-family: GothaProMedium;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20.5px;
+  }
+
+  &__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 376px;
+  }
+}

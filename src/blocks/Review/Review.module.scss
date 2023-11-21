@@ -1,0 +1,76 @@
+.review {
+  padding-top: 69px;
+  padding-left: 173px;
+  color: #000;
+  &__title {
+    margin-bottom: 70px;
+    
+    font-family: HeadingNow-45Medium;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 59.5px;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 103px 115px;
+    list-style: none;
+  }
+
+  &__card {
+    width: 493px;
+
+    /* padding: 16px 49px 36px 36px; */
+    border: 1px solid #e8e8e8;
+    border-radius: 25px;
+    box-shadow: 6px 9px 15px -1px rgba(0, 0, 0, 0.25);
+  }
+  &__card-information {
+    padding-block: 26px;
+    padding-inline: 44px;
+  }
+  &__contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 17px;
+  }
+
+  &__name {
+    display: block;
+
+    font-family: Gotham Pro;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 42.5px;
+  }
+
+  &__text {
+    font-family: Gotham Pro;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21.5px;
+  }
+
+  &__avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 98px;
+    height: 98px;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 20px;
+
+    color: #fff;
+    font-family: Gotham Pro;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 59.5px; /* 108.182% */
+    text-transform: uppercase;
+  }
+}

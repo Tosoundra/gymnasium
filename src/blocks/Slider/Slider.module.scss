@@ -3,12 +3,58 @@
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 
-  & > img:first-child {
-    width: 100%;
+  &__container {
+    width: 1440px;
   }
 
   &__item {
+    width: 1440px;
+    height: 800px;
+
     scroll-snap-align: center;
     scroll-snap-stop: always;
+  }
+
+  &__picture {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+.marquee-container {
+  display: flex;
+  overflow: hidden;
+  gap: 60px;
+  background-color: #ed6d2d;
+  padding: 50px 0 50px 55px;
+
+  &__title {
+    display: inline;
+    color: #fff;
+    white-space: nowrap;
+    font-family: HeadingNow-83Book;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 91px;
+    text-transform: uppercase;
+  }
+}
+.items {
+  display: flex;
+  gap: 60px;
+}
+.marquee {
+  animation: scroll 20s linear infinite;
+}
+
+.items-wrap:hover .marquee {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
   }
 }

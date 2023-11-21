@@ -1,0 +1,66 @@
+.footer {
+  background-color: #000;
+  padding-left: 171px;
+  padding-top: 43px;
+  padding-bottom: 44px;
+  color: #fff;
+
+  &__logo {
+    margin-bottom: 30px;
+  }
+
+  font-family: HeadingNow-84Regular;
+  &__container {
+    display: flex;
+    gap: 308px;
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #fff;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    color: #fff;
+    font-family: GothaProMedium;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  &__icon {
+    margin-right: 13px;
+  }
+
+  &__terms {
+    margin-top: 40px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 70px;
+  }
+
+  &__rights {
+    color: #a9a9a9;
+    font-family: GothaProRegular;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+  }
+
+  &__social-media {
+    display: flex;
+    gap: 61px;
+    margin-top: auto;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22.5px;
+  }
+}

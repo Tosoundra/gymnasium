@@ -1,0 +1,39 @@
+.mentors {
+  padding-top: 171px;
+  padding-left: 173px;
+
+  &__title-container {
+    display: flex;
+    align-items: end;
+  }
+  &__title {
+    color: #000;
+    font-family: HeadingNow-45Medium;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 59.5px;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    gap: 32px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    padding-block: 146px;
+    color: #fff;
+  }
+
+  &__button {
+    border: none;
+    border-radius: 50%;
+    background: url('../../assets/images/button_icon.svg') no-repeat center / auto;
+    background-color: #d9d9d9;
+    padding: calc(43px / 2);
+    &:last-of-type {
+      margin-left: 15px;
+      transform: rotate(180deg);
+    }
+  }
+}
