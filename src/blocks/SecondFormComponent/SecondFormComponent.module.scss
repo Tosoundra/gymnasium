@@ -1,14 +1,16 @@
+@use '../../styles/elementVariables.scss';
+
 .secondFormComponent {
   position: relative;
   margin-top: 40px;
   margin-bottom: 90px;
 
   &__blur {
-    width: 1440px;
-    height: 800px;
+    width: 100%;
+    height: 100%;
 
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.29) 0%, rgba(255, 255, 255, 0.29) 100%),
-      url('../../assets/images/area_img.jpeg') 50% / cover no-repeat;
+      url('../../assets/images/area_img.jpeg') no-repeat center / cover;
     filter: blur(16.5px);
     position: absolute;
     top: 0;
@@ -19,7 +21,10 @@
   &__container {
     display: flex;
     align-items: center;
-    padding: 150px 78px 132px 173px;
+    justify-content: space-around;
+
+    padding-top: 150px;
+    padding-bottom: 130px;
   }
 
   &__mission {

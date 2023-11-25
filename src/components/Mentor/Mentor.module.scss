@@ -2,7 +2,7 @@
   position: relative;
   width: 532px;
   height: 408px;
-  padding: 37px;
+
   display: flex;
   border-radius: 24px;
   flex: 0 0 auto;
@@ -10,6 +10,11 @@
   scroll-snap-stop: always;
 
   background-color: #000;
+  color: #fff;
+
+  &__container {
+    padding: 37px;
+  }
 
   &__name {
     display: inline-block;
@@ -37,6 +42,6 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 376px;
+    width: 60%;
   }
 }

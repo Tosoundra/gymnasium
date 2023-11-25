@@ -23,6 +23,8 @@ html {
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
+  scroll-behavior: smooth;
 }
 a {
   color: unset;
@@ -34,9 +36,6 @@ a {
 
 main {
   display: block;
-}
-li {
-  list-style: none;
 }
 
 /**

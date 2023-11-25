@@ -1,11 +1,16 @@
+@use '../../styles/elementVariables.scss';
+
 .adaptive {
   display: flex;
-  padding: 55px 17px 0 172px;
-  color: #000;
   justify-content: space-between;
+  @include elementVariables.paddings;
+
+  padding-top: 55px;
+  color: #000;
 
   &__information-container {
     max-width: 528px;
+    margin-bottom: 45px;
   }
 
   &__title {
@@ -39,20 +44,25 @@
     color: #fff;
     border: none;
     border-radius: 50px;
-    background: #ed6d2d;
+    background: #c6c6c5;
     padding: 10px 25px;
 
-    font-family: Gotham Pro;
+    font-family: GothaProMedium;
     font-size: 12px;
     font-weight: 400;
     line-height: 9px;
+    &:hover {
+      background-color: #ed6d2d;
+    }
+    &_active {
+      background-color: #ed6d2d;
+    }
   }
 
   &__list {
     margin-bottom: 46px;
-    list-style: disc;
 
-    font-family: Gotham Pro;
+    font-family: GothaProRegular;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
@@ -64,6 +74,7 @@
 
   &__element {
     margin-left: 30px;
+    list-style: disc;
   }
 
   &__submit {
@@ -74,7 +85,7 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
     color: #fff;
-    font-family: Gotham Pro;
+    font-family: GothaProMedium;
     font-size: 17px;
     font-weight: 400;
     line-height: 22.5px;

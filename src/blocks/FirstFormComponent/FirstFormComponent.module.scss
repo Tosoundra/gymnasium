@@ -1,29 +1,27 @@
+@use '../../styles/elementVariables.scss';
+
 .firstFormComponent {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   position: relative;
-  height: 643px;
+  padding-block: 88px;
   background: #000;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 
   &__title {
     color: #fff;
     font-family: HeadingNow-84Regular;
     font-size: 77px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 75.5px; /* 98.052% */
+    line-height: 75.5px;
     text-transform: uppercase;
 
     &::after {
       content: 'STRENGTHS';
       color: #ed6d2d;
-      font-family: HeadingNow-84Regular;
-      font-size: 77px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 75.5px;
-      text-transform: uppercase;
     }
   }
 }

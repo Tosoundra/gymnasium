@@ -4,18 +4,20 @@ export const Slider = ({ arrayOfItems, description }) => {
   return (
     <>
       <section className={styles.slider}>
-        {arrayOfItems.map((item, index) => {
-          return (
-            <img
-              key={index}
-              className={styles.slider__picture}
-              src={item}
-              alt={`picture ${index}`}
-              width="1440px"
-              height="800px"
-            />
-          );
-        })}
+        <ul className={styles.slider__container}>
+          {arrayOfItems.map((item, index) => {
+            return (
+              <img
+                key={index}
+                className={styles.slider__picture}
+                src={item}
+                alt={`picture ${index}`}
+                width="100%"
+                height="100%"
+              />
+            );
+          })}
+        </ul>
       </section>
 
       <div className={styles['marquee-container']}>

@@ -1,10 +1,12 @@
+@use '../../styles/elementVariables.scss';
+
 .header {
-  height: 944px;
   background-color: #ed6d2d;
   color: #fff;
 
   &__information {
-    margin-left: 173px;
+    @include elementVariables.paddings;
+    padding-bottom: 56px;
   }
 
   &__logo {

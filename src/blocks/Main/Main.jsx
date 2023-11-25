@@ -12,7 +12,14 @@ import { SecondFormComponent } from '../SecondFormComponent/SecondFormComponent'
 import { Slider } from '../Slider/Slider';
 
 const titleForKid = ['world champion', 'world champion'];
-const titleForZone = ['FUNCTIONAL TRAINING', 'BJJ', 'BOXING'];
+const titleForZone = [
+  'FUNCTIONAL TRAINING',
+  <>&#124;</>,
+  'BJJ',
+  <>&#124;</>,
+  'BOXING',
+  <>&#124;</>,
+];
 
 export const Main = ({}) => {
   return (

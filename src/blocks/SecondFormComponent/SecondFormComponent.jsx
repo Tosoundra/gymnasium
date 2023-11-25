@@ -7,7 +7,9 @@ export const SecondFormComponent = ({}) => {
       <span className={styles.secondFormComponent__mission}>MISSION AND GOALS</span>
       <div className={styles.secondFormComponent__container}>
         <div>
-          <h3 className={styles.secondFormComponent__title}>Empowering</h3>
+          <h3 className={styles.secondFormComponent__title}>
+            Empowering <br />
+          </h3>
           <p className={styles.secondFormComponent__subtitle}>
             Our role is to enable our children by <br /> empowering them
           </p>

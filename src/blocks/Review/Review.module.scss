@@ -1,10 +1,14 @@
+@use '../../styles/elementVariables.scss';
+
 .review {
   padding-top: 69px;
-  padding-left: 173px;
+  width: fit-content;
+  margin: auto;
   color: #000;
+
   &__title {
     margin-bottom: 70px;
-    
+
     font-family: HeadingNow-45Medium;
     font-size: 50px;
     font-weight: 500;

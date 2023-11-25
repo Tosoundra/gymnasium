@@ -1,12 +1,15 @@
+@use '../../styles/elementVariables.scss';
 .mentors {
+  max-width: 1105px;
+  margin: auto;
   padding-top: 171px;
-  padding-left: 173px;
 
   &__title-container {
     display: flex;
     align-items: end;
   }
   &__title {
+    text-wrap: balance;
     color: #000;
     font-family: HeadingNow-45Medium;
     font-size: 50px;

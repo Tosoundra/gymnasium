@@ -4,9 +4,8 @@
 @import url('./assets/fonts/GothamPro/font.css');
 
 :root {
-  // max-width: 1280px;
-  font-family: HeadingNow-84Regular, HeadingNow-45Medium, GothaProBold, GothaProLight,
-    GothaProMedium, GothaProRegular;
+  font-family: HeadingNow-84Regular, HeadingNow-83Book, HeadingNow-45Medium, GothaProBold,
+    GothaProLight, GothaProMedium, GothaProRegular;
   line-height: 1.5;
 
   font-synthesis: none;
@@ -22,4 +21,19 @@ button {
   &:hover {
     @include elementVariables.buttonOnHover;
   }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }

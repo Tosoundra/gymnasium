@@ -1,25 +1,19 @@
 .slider {
-  display: flex;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-
   &__container {
-    width: 1440px;
-  }
-
-  &__item {
-    width: 1440px;
-    height: 800px;
-
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
+    height: 100vh;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
   }
 
   &__picture {
-    width: 100%;
-    object-fit: contain;
+    flex: none;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    object-fit: cover;
   }
 }
+
 .marquee-container {
   display: flex;
   overflow: hidden;
