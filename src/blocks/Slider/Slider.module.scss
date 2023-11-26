@@ -1,11 +1,26 @@
 .slider {
+  position: relative;
   &__container {
     height: 100vh;
     display: flex;
     overflow: auto;
     scroll-snap-type: x mandatory;
   }
-
+  &__button {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 38px;
+    height: 76px;
+    border: none;
+    background: url('../../assets/images/slider_button_nav.svg') no-repeat center / cover;
+    margin-inline: 40px;
+    &:last-of-type {
+      left: unset;
+      right: 0;
+      rotate: 180deg;
+    }
+  }
   &__picture {
     flex: none;
     scroll-snap-align: center;

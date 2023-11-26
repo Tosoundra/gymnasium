@@ -1,6 +1,6 @@
 import { Form } from '../../components/Form/Form';
 import styles from './SecondFormComponent.module.scss';
-export const SecondFormComponent = ({}) => {
+export const SecondFormComponent = () => {
   return (
     <section className={styles.secondFormComponent}>
       <div className={styles.secondFormComponent__blur}></div>

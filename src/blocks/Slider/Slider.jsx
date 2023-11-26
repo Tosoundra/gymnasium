@@ -1,10 +1,33 @@
+import { useEffect, useRef, useState } from 'react';
 import styles from './Slider.module.scss';
 
 export const Slider = ({ arrayOfItems, description }) => {
+  const [imageWidth, setImageWidth] = useState(0);
+  const listRef = useRef(null);
+  const imageRef = useRef(null);
+
+  const prevButtonClickHandler = () => {
+    listRef.current.scrollLeft -= imageWidth;
+    console.log(imageWidth);
+  };
+
+  const nextButtonClickHandler = () => {
+    listRef.current.scrollLeft += imageWidth;
+    console.log(imageWidth);
+  };
+
+  useEffect(() => {
+    const width = imageRef.current.clientWidth;
+    setImageWidth(width);
+  }, []);
   return (
     <>
       <section className={styles.slider}>
-        <ul className={styles.slider__container}>
+        <button
+          onClick={prevButtonClickHandler}
+          className={styles.slider__button}
+          type="button"></button>
+        <ul className={styles.slider__container} ref={listRef}>
           {arrayOfItems.map((item, index) => {
             return (
               <img
@@ -14,10 +37,15 @@ export const Slider = ({ arrayOfItems, description }) => {
                 alt={`picture ${index}`}
                 width="100%"
                 height="100%"
+                ref={imageRef}
               />
             );
           })}
         </ul>
+        <button
+          onClick={nextButtonClickHandler}
+          className={styles.slider__button}
+          type="button"></button>
       </section>
 
       <div className={styles['marquee-container']}>

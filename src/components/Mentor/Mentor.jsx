@@ -6,7 +6,6 @@ export const Mentor = ({ mentor, setCardWidth }) => {
   const cardRef = useRef(null);
 
   useEffect(() => {
-    console.log(cardRef.current.clientWidth);
     const width = cardRef.current.clientWidth;
     setCardWidth(width);
   });

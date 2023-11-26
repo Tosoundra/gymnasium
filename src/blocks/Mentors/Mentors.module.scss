@@ -24,8 +24,12 @@
     overflow-x: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-    padding-block: 146px;
+    padding-block: 140px;
     color: #fff;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
   }
 
   &__button {
@@ -35,8 +39,8 @@
     background-color: #d9d9d9;
     padding: calc(43px / 2);
     &:last-of-type {
+      rotate: 180deg;
       margin-left: 15px;
-      transform: rotate(180deg);
     }
   }
 }
