@@ -1,7 +1,6 @@
 .slider {
   position: relative;
   &__container {
-    height: 100vh;
     display: flex;
     overflow: auto;
     scroll-snap-type: x mandatory;
@@ -27,6 +26,12 @@
     scroll-snap-stop: always;
     object-fit: cover;
   }
+
+  @media (max-width: 767px) {
+    &__button {
+      display: none;
+    }
+  }
 }
 
 .marquee-container {
@@ -45,6 +50,10 @@
     font-weight: 300;
     line-height: 91px;
     text-transform: uppercase;
+  }
+
+  @media (max-width: 767px) {
+    padding: unset;
   }
 }
 .items {

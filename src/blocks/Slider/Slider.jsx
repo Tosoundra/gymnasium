@@ -8,18 +8,17 @@ export const Slider = ({ arrayOfItems, description }) => {
 
   const prevButtonClickHandler = () => {
     listRef.current.scrollLeft -= imageWidth;
-    console.log(imageWidth);
   };
 
   const nextButtonClickHandler = () => {
     listRef.current.scrollLeft += imageWidth;
-    console.log(imageWidth);
   };
 
   useEffect(() => {
     const width = imageRef.current.clientWidth;
     setImageWidth(width);
   }, []);
+
   return (
     <>
       <section className={styles.slider}>

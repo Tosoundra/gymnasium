@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import styles from './Mentor.module.scss';
 import { useRef } from 'react';
+import styles from './Mentor.module.scss';
 
 export const Mentor = ({ mentor, setCardWidth }) => {
   const cardRef = useRef(null);

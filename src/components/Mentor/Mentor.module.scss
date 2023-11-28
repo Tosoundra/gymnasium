@@ -1,7 +1,6 @@
 .mentor {
   position: relative;
   width: 532px;
-  height: 408px;
 
   display: flex;
   border-radius: 24px;
@@ -43,5 +42,23 @@
     bottom: 0;
     right: 0;
     width: 60%;
+  }
+
+  @media (max-width: 767px) {
+    & {
+      width: 100%;
+    }
+
+    &__container {
+      padding: 13px;
+    }
+    &__name {
+      margin-bottom: unset;
+      font-size: 26px;
+    }
+    &__list {
+      gap: unset;
+      font-size: 8px;
+    }
   }
 }

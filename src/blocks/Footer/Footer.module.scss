@@ -3,10 +3,7 @@
 
   padding-block: 44px;
   color: #fff;
-  &__wrapper {
-    width: fit-content;
-    margin: auto;
-  }
+
   &__logo {
     margin-bottom: 30px;
   }
@@ -14,12 +11,13 @@
   font-family: HeadingNow-84Regular;
   &__container {
     display: flex;
-    gap: 308px;
+    justify-content: space-evenly;
   }
 
   &__address {
     display: flex;
     flex-direction: column;
+    align-items: start;
     gap: 15px;
     color: #fff;
   }
@@ -28,6 +26,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-top: 63px;
 
     color: #fff;
     font-family: GothaProMedium;
@@ -64,5 +63,11 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 22.5px;
+  }
+
+  @media (max-width: 767px) {
+    &__container {
+      flex-direction: column;
+    }
   }
 }

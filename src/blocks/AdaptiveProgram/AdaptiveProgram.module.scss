@@ -1,10 +1,10 @@
 @use '../../styles/elementVariables.scss';
 
 .adaptive {
-  display: flex;
-  justify-content: space-between;
-  @include elementVariables.paddings;
-
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+  }
   padding-top: 55px;
   color: #000;
 
@@ -36,7 +36,7 @@
 
   &__navigation {
     display: flex;
-    gap: 22px;
+    justify-content: space-between;
     margin-bottom: 46px;
   }
 
@@ -94,5 +94,19 @@
 
   &__picture {
     object-fit: cover;
+  }
+
+  @media (max-width: 767px) {
+    &__navigation {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    &__picture {
+      display: none;
+    }
   }
 }

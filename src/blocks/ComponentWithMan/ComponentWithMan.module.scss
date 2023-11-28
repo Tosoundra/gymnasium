@@ -1,3 +1,5 @@
+@use '../../styles/elementVariables.scss';
+
 .title-container {
   background-color: #000;
   padding: 104px 0;
@@ -15,12 +17,19 @@
       color: #ed6d2d;
     }
   }
+
+  @media (max-width: 767px) {
+    &__title {
+      font-size: 60px;
+    }
+  }
 }
 
 .componentWithMan {
   color: #fff;
   background: url('../../assets/images/main_back_two.png') no-repeat top / cover;
-  padding: 133px 0 212px 173px;
+  @include elementVariables.paddings;
+  padding-block: 150px;
 
   &__title {
     margin-bottom: 15px;
@@ -61,5 +70,13 @@
   &__element {
     list-style: disc;
     margin-left: 30px;
+  }
+
+  @media (max-width: 767px) {
+    padding-left: 10px;
+
+    &__title{
+      font-size: 50px;
+    }
   }
 }

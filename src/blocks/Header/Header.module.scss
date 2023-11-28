@@ -1,10 +1,14 @@
 @use '../../styles/elementVariables.scss';
 
 .header {
+  // background: url('../../assets/images/gmnsm_icon.svg');
+
   background-color: #ed6d2d;
   color: #fff;
 
   &__information {
+    position: relative;
+    z-index: 1;
     @include elementVariables.paddings;
     padding-bottom: 56px;
   }
@@ -43,6 +47,10 @@
     font-weight: 400;
     line-height: 20px;
     text-transform: uppercase;
+    & > * {
+      margin-left: 30px;
+      list-style: disc;
+    }
   }
 
   &__address {
@@ -62,12 +70,31 @@
   &__ellipse {
     position: absolute;
     top: -122px;
-    right: 1px;
+    right: 0;
   }
 
   &__picture {
     position: absolute;
     top: -31px;
-    right: 1px;
+    right: 0;
+  }
+
+  @media (max-width: 767px) {
+    &__logo {
+      margin-left: 10px;
+    }
+    &__information {
+      padding-left: 10px;
+    }
+    &__title {
+      font-size: 30px;
+    }
+
+    &__ellipse {
+      display: none;
+    }
+    &__picture {
+      display: none;
+    }
   }
 }

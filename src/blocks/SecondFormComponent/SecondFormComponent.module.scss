@@ -70,4 +70,15 @@
       font-weight: 400;
     }
   }
+
+  @media (max-width: 767px) {
+    &__container {
+      flex-direction: column;
+      text-align: center;
+      gap: 45px;
+    }
+    &__title {
+      font-size: 30px;
+    }
+  }
 }
