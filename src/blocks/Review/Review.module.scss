@@ -1,5 +1,5 @@
 @use '../../styles/elementVariables.scss';
-
+@use '../../styles/fontVariables.scss';
 .review {
   padding-top: 69px;
   width: fit-content;
@@ -61,12 +61,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     width: 98px;
     height: 98px;
     color: #fff;
     border-radius: 50%;
     margin-right: 20px;
-
+  }
+  &__short-name {
     color: #fff;
     font-size: 55px;
     font-style: normal;
@@ -74,18 +76,27 @@
     line-height: 59.5px;
     text-transform: uppercase;
   }
+  @media (max-width: 1105px) {
+    &__list {
+      gap: 100px 0;
+    }
+  }
 
   @media (max-width: 767px) {
     &__list {
       grid-template-columns: 1fr;
+      gap: 25px;
+    }
+    &__avatar {
+      width: 70px;
+      height: 70px;
     }
     &__card-information {
       padding: 5px 9px;
     }
-  }
-  @media (max-width: 1105px) {
-    &__list {
-      gap: 100px 0;
+
+    &__title {
+      @include fontVariables.titleFontStylesMobile;
     }
   }
 }

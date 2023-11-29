@@ -1,6 +1,9 @@
+import { useContext } from 'react';
 import styles from './GetMoreInfo.module.scss';
+import { PopupFeedbackContext } from '../../App';
 
 export const GetMoreInfo = () => {
+  const setIsPopupOpen = useContext(PopupFeedbackContext);
   return (
     <section className={styles.getMoreInfo}>
       <span className={styles.getMoreInfo__subtitle}>GET MORE INFO</span>
@@ -39,7 +42,13 @@ export const GetMoreInfo = () => {
           <option value="downtown">Downtown</option>
         </select>
         <div></div>
-        <button className={styles.form__submit} type="submit">
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            setIsPopupOpen(true);
+          }}
+          className={styles.form__submit}
+          type="submit">
           Send
         </button>
       </form>

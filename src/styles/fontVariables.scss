@@ -1,0 +1,32 @@
+@mixin inputFontStyles {
+  font-family: GothaProRegular;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px;
+}
+
+@mixin submitFontStyles {
+  font-family: GothaProBold;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 22.5px;
+  text-transform: uppercase;
+}
+
+@mixin titleFontStylesMobile {
+  margin-bottom: 25px;
+  font-size: 30px;
+  line-height: 1;
+}
+
+@mixin reviewFontStylesMobile {
+  margin-bottom: 25px;
+  font-size: 30px;
+  line-height: unset;
+}
+
+@mixin packageFontStylesMobile {
+  margin-bottom: 25px;
+  font-size: 30px;
+  line-height: unset;
+}

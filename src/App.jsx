@@ -14,8 +14,8 @@ export const App = () => {
   return (
     <>
       <PopupFeedbackContext.Provider value={setIsPopupWithFeedbackOpen}>
-        <Header setIsPopupOpen={setIsPopupOpen} />
         <PopupWithFormContext.Provider value={setIsPopupOpen}>
+          <Header setIsPopupOpen={setIsPopupOpen} />
           <Main />
           <PopupWithForm
             isOpen={isPopupOpen}

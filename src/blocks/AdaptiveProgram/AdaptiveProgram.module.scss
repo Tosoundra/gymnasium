@@ -96,17 +96,22 @@
     object-fit: cover;
   }
 
+  @media (max-width: 1023px) {
+    &__picture {
+      display: none;
+    }
+  }
+
   @media (max-width: 767px) {
     &__navigation {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 10px;
     }
-  }
 
-  @media (max-width: 1023px) {
-    &__picture {
-      display: none;
+    &__submit {
+      display: block;
+      margin: auto;
     }
   }
 }

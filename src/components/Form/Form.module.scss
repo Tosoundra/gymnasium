@@ -1,14 +1,16 @@
+@use '../../styles/fontVariables.scss';
+
 .form {
   max-width: 418px;
   border-radius: 20px;
   background: #fff;
-  flex: none;
+  flex: auto;
 
   &__container {
     display: flex;
     flex-direction: column;
-
-    padding: 39px 41px 37px;
+    gap: 26px;
+    padding: 40px;
   }
 
   &__title {
@@ -26,12 +28,8 @@
   &__input {
     border: none;
     border-bottom: 1px solid #a9a9a9;
-    margin-bottom: 26px;
 
-    font-family: GothaProRegular;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 22.5px;
+    @include fontVariables.inputFontStyles;
     &:focus {
       outline: none;
       border-color: rgba(255, 0, 0, 0.811);
@@ -49,10 +47,12 @@
     color: #fff;
     background-color: #ed6d2d;
 
-    font-family: GothaProBold;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 22.5px;
-    text-transform: uppercase;
+    @include fontVariables.submitFontStyles;
+  }
+
+  @media (max-width: 767px) {
+    &__title {
+      margin-bottom: unset;
+    }
   }
 }

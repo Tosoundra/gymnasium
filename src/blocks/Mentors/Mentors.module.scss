@@ -1,4 +1,6 @@
 @use '../../styles/elementVariables.scss';
+@use '../../styles/fontVariables.scss';
+
 .mentors {
   max-width: 1105px;
   margin: auto;
@@ -45,9 +47,10 @@
   }
 
   @media (max-width: 767px) {
+    padding-top: 50px;
+    max-width: min-content;
     &__title {
-      font-size: 20px;
-      line-height: 1.2;
+      @include fontVariables.titleFontStylesMobile;
     }
 
     &__button {
@@ -55,7 +58,8 @@
     }
 
     &__list {
-      padding-block: 15px;
+    padding: unset;
+    padding-top: 25%;
     }
   }
 }

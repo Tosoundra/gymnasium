@@ -30,7 +30,7 @@
     font-family: HeadingNow-84Regular;
     font-size: 88px;
     font-weight: 400;
-    line-height: 45px;
+    line-height: 70px;
     text-transform: uppercase;
   }
 
@@ -44,13 +44,15 @@
   }
 
   &__button {
-    display: block;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    translate: -50%;
     background-color: #fff;
     padding: 10px 40px;
     border: none;
     border-radius: 7px;
     @include elementVariables.buttonShadow;
-    margin: auto;
 
     color: #000;
     font-family: GothaProMedium;
@@ -61,14 +63,21 @@
   }
   @media (max-width: 767px) {
     & {
-      // background-image: url('../../assets/images/gmnsm_icon.svg');
+      background-image: url('../../assets/images/hero_background_mob.png');
       background-repeat: no-repeat;
       background-position: center;
       background-size: auto;
     }
 
     &__title {
+      margin-top: 30%;
       text-align: center;
+      font-size: 40px;
+    }
+
+    &__text {
+      text-align: center;
+      font-size: 10px;
     }
 
     &__picture {

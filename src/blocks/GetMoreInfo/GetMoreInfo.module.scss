@@ -1,3 +1,6 @@
+@use '../../styles/elementVariables.scss';
+@use '../../styles/fontVariables.scss';
+
 .getMoreInfo {
   padding-top: 104px;
   width: fit-content;
@@ -28,14 +31,22 @@
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
-    line-height: 50px; /* 166.667% */
+    line-height: 50px;
     text-transform: uppercase;
   }
 
   @media (max-width: 767px) {
+    padding-top: unset;
+    padding: 50px 0;
+    @include elementVariables.paddings;
     &__title {
-      font-size: 40px;
+      font-size: 30px;
+      margin-bottom: 50px;
+      line-height: unset;
     }
+  }
+  &__subtitle {
+    margin-bottom: 50px;
   }
 }
 
@@ -51,10 +62,9 @@
 
     border: none;
     border-bottom: 1px solid #a9a9a9;
-    font-family: Gotham Pro;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 22.5px;
+
+    @include fontVariables.inputFontStyles;
+
     &:focus {
       outline: none;
       border-color: rgba(255, 0, 0, 0.811);
@@ -71,15 +81,12 @@
     color: #fff;
     background-color: #ed6d2d;
 
-    font-family: Gotham Pro;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 22.5px;
-    text-transform: uppercase;
+    @include fontVariables.submitFontStyles;
   }
   @media (max-width: 767px) {
     & {
       grid-template-columns: 1fr;
+      gap: 30px;
     }
   }
 }

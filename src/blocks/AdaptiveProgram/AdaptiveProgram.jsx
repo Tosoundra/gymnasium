@@ -1,8 +1,10 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { arrayOfTrainingProgram } from '../../assets/constants/arrayOfTrainingProgram';
 import styles from './AdaptiveProgram.module.scss';
+import { PopupWithFormContext } from '../../App';
 
 export const AdaptiveProgram = ({}) => {
+  const setIsPopupOpen = useContext(PopupWithFormContext);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isActive, setIsActive] = useState(0);
 
@@ -70,7 +72,12 @@ export const AdaptiveProgram = ({}) => {
               );
             })}
           </ul>
-          <button className={styles.adaptive__submit} type="button">
+          <button
+            onClick={() => {
+              setIsPopupOpen(true);
+            }}
+            className={styles.adaptive__submit}
+            type="button">
             book a trial class
           </button>
         </div>

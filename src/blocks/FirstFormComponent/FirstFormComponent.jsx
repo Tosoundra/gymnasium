@@ -5,9 +5,7 @@ export const FirstFormComponent = ({}) => {
   return (
     <section className={styles.firstFormComponent}>
       <div className={styles.firstFormComponent__container}>
-        <h2 className={styles.firstFormComponent__title}>
-          TURN <br /> WEAKNESS <br /> INTO <br />
-        </h2>
+        <h2 className={styles.firstFormComponent__title}>TURN WEAKNESS INTO</h2>
         <Form title="BOOK A TRIAL CLASS" />
       </div>
     </section>

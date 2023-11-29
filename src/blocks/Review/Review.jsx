@@ -12,9 +12,9 @@ export const Review = () => {
             <li className={styles.review__card} key={index}>
               <div className={styles['review__card-information']}>
                 <div className={styles.review__contact}>
-                  <span style={{ backgroundColor: item.color }} className={styles.review__avatar}>
-                    {item.name[0]}
-                  </span>
+                  <div style={{ backgroundColor: item.color }} className={styles.review__avatar}>
+                    <span className={styles['review__short-name']}>{item.name[0]}</span>
+                  </div>
                   <div>
                     <span className={styles.review__name}>{item.name}</span>
                     <img src={rating} alt="rating" />

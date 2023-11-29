@@ -6,6 +6,16 @@ export const Form = ({ title }) => {
   const setIsPopupWithFeedbackOpen = useContext(PopupFeedbackContext);
   const setIsPopupOpen = useContext(PopupWithFormContext);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    if (form.checkValidity()) {
+      console.log('heelo world');
+    } else {
+      console.log('hello');
+    }
+  };
+
   return (
     <div className={styles.form}>
       <form className={styles.form__container}>
@@ -16,6 +26,7 @@ export const Form = ({ title }) => {
           placeholder="Name"
           name="name"
           id="name"
+          required
         />
         <input
           className={styles.form__input}
@@ -23,6 +34,7 @@ export const Form = ({ title }) => {
           placeholder="E-mail"
           name="email"
           id="email"
+          required
         />
         <input
           className={styles.form__input}
@@ -30,13 +42,15 @@ export const Form = ({ title }) => {
           placeholder="Mobile number"
           name="mobile"
           id="mobile"
+          required
         />
         <input className={styles.form__input} type="number" placeholder="Age" name="age" id="age" />
         <select
           className={styles.form__input}
           placeholder="Preferred Location"
           name="location"
-          id="location">
+          id="location"
+          required>
           <option value="palmJumeirah">Palm Jumeirah</option>
           <option value="downtown">Downtown</option>
         </select>

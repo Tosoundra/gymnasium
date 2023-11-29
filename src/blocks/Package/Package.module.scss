@@ -1,7 +1,7 @@
 @use '../../styles/elementVariables.scss';
+@use '../../styles/fontVariables.scss';
 
 .package {
-  padding-top: 69px;
   width: fit-content;
   margin: auto;
   color: #000;
@@ -115,6 +115,19 @@
     text-transform: uppercase;
   }
 
+  @media (max-width: 767px) {
+    &__title {
+      @include fontVariables.titleFontStylesMobile;
+    }
+    &__card-title {
+      font-size: 30px;
+    }
+
+    &__card-age {
+      font-size: 20px;
+    }
+  }
+  
   @media (max-width: 348px) {
     &__card {
       width: unset;

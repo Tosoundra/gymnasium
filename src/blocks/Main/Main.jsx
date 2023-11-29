@@ -1,3 +1,5 @@
+import styles from './Main.module.scss'
+
 import { arrayOfSliderImage } from '../../assets/constants/arrayOfSliderImage';
 import { arrayOfSliderZones } from '../../assets/constants/arrayOfSliderZones';
 import { AdaptiveProgram } from '../AdaptiveProgram/AdaptiveProgram';
@@ -30,9 +32,11 @@ export const Main = ({}) => {
       <Slider arrayOfItems={arrayOfSliderImage} description={titleForKid} />
       <SecondFormComponent />
       <Slider arrayOfItems={arrayOfSliderZones} description={titleForZone} />
-      <Package />
-      <Review />
-      <Mentors />
+      <div className={styles.main}>
+        <Package />
+        <Review />
+        <Mentors />
+      </div>
       <Map />
       <GetMoreInfo />
     </main>

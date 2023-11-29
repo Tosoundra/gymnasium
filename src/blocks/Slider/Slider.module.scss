@@ -54,6 +54,11 @@
 
   @media (max-width: 767px) {
     padding: unset;
+
+    &__title {
+      font-size: 30px;
+      line-height: unset;
+    }
   }
 }
 .items {

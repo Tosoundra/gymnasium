@@ -2,8 +2,7 @@
 
 .secondFormComponent {
   position: relative;
-  margin-top: 40px;
-  margin-bottom: 90px;
+  margin: 50px 0;
 
   &__blur {
     width: 100%;
@@ -22,9 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-
-    padding-top: 150px;
-    padding-bottom: 130px;
+    padding: 140px 0;
   }
 
   &__mission {
@@ -76,9 +73,17 @@
       flex-direction: column;
       text-align: center;
       gap: 45px;
+      padding: 30px;
     }
     &__title {
+      margin-bottom: 30px;
       font-size: 30px;
+      line-height: unset;
+    }
+
+    &__subtitle {
+      font-size: 15px;
+      text-align: left;
     }
   }
 }

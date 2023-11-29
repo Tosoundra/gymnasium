@@ -19,15 +19,18 @@
   }
 
   @media (max-width: 767px) {
+    padding: 20px;
+
     &__title {
-      font-size: 60px;
+      font-size: 24px;
+      line-height: unset;
     }
   }
 }
 
 .componentWithMan {
   color: #fff;
-  background: url('../../assets/images/main_back_two.png') no-repeat top / cover;
+  background: url('../../assets/images/main_back_two.png') no-repeat center / cover;
   @include elementVariables.paddings;
   padding-block: 150px;
 
@@ -74,9 +77,14 @@
 
   @media (max-width: 767px) {
     padding-left: 10px;
-
-    &__title{
+    padding-block: 20px;
+    &__title {
       font-size: 50px;
+    }
+
+    &__list {
+      font-size: unset;
+      line-height: normal;
     }
   }
 }

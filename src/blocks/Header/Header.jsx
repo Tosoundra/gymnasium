@@ -31,7 +31,7 @@ export const Header = ({ setIsPopupOpen }) => {
           </p>
         </div>
 
-        <Button title="Start today" setIsPopupOpen={setIsPopupOpen} />
+        <Button title="Start today" />
       </div>
       <img className={styles.header__ellipse} src={ellipse} alt="ellipse" />
       <img className={styles.header__picture} src={mainPicture} alt="main picture" />

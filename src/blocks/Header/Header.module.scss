@@ -1,7 +1,7 @@
 @use '../../styles/elementVariables.scss';
 
 .header {
-  // background: url('../../assets/images/gmnsm_icon.svg');
+  background: url('../../assets/images/hero_background_mob.png');
 
   background-color: #ed6d2d;
   color: #fff;
@@ -69,27 +69,39 @@
 
   &__ellipse {
     position: absolute;
-    top: -122px;
+    top: 0;
     right: 0;
   }
 
   &__picture {
     position: absolute;
-    top: -31px;
+    top: 0;
     right: 0;
   }
 
   @media (max-width: 767px) {
     &__logo {
       margin-left: 10px;
-    }
-    &__information {
-      padding-left: 10px;
-    }
-    &__title {
-      font-size: 30px;
+      margin-bottom: 50px;
     }
 
+    &__title {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &__subtitle {
+      font-size: 12px;
+    }
+    &__list {
+      font-size: 12px;
+      & > * {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  @media (max-width: 1023px) {
     &__ellipse {
       display: none;
     }
