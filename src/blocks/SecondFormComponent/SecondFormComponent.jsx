@@ -4,7 +4,6 @@ import styles from './SecondFormComponent.module.scss';
 export const SecondFormComponent = () => {
   return (
     <section className={styles.secondFormComponent}>
-      <div className={styles.secondFormComponent__blur}></div>
       <span className={styles.secondFormComponent__mission}>MISSION AND GOALS</span>
       <div className={styles.secondFormComponent__container}>
         <div>
@@ -17,6 +16,7 @@ export const SecondFormComponent = () => {
         </div>
         <Form title="Join us now" />
       </div>
+      <div className={styles.secondFormComponent__blur}></div>
     </section>
   );
 };

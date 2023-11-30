@@ -1,8 +1,19 @@
 import logo from '../../assets/images/logo.svg';
 import gmnsm from '../../assets/images/gmnsm_icon.svg';
 import styles from './PopupFeedback.module.scss';
+import { useEffect, useRef } from 'react';
 
 export const PopupFeedback = ({ isPopupWithFeedbackOpen, setIsPopupWithFeedbackOpen }) => {
+  const buttonRef = useRef(null);
+  useEffect(() => {
+    if (isPopupWithFeedbackOpen) {
+      buttonRef.current.focus();
+      document.body.style.overflow = 'hidden';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isPopupWithFeedbackOpen]);
   return (
     <div
       className={`${styles.popupFeedback} ${
@@ -21,6 +32,7 @@ export const PopupFeedback = ({ isPopupWithFeedbackOpen, setIsPopupWithFeedbackO
         </div>
 
         <button
+          ref={buttonRef}
           onClick={() => {
             setIsPopupWithFeedbackOpen(false);
           }}

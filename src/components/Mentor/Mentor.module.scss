@@ -46,7 +46,8 @@
 
   @media (max-width: 767px) {
     & {
-      width: 100%;
+      width: 45vmax;
+      min-height: 25vmax;
     }
 
     &__container {
@@ -61,7 +62,7 @@
       font-size: 8px;
     }
     &__image {
-      width: 45%;
+      width: 25vmax;
     }
   }
 }
