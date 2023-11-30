@@ -69,6 +69,14 @@
       outline: none;
       border-color: rgba(255, 0, 0, 0.811);
     }
+
+    &:invalid {
+      border-color: rgba(255, 0, 0, 0.811);
+    }
+
+    &:valid {
+      border-color: #32a852;
+    }
   }
 
   &__submit {

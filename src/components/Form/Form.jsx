@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef, useState } from 'react';
+import { useContext, useState } from 'react';
 import styles from './Form.module.scss';
 import { PopupFeedbackContext, PopupWithFormContext } from '../../App';
 
@@ -11,8 +11,6 @@ export const Form = ({ title }) => {
   const [mobileValue, setMobileValue] = useState('');
   const [ageValue, setAgeValue] = useState('');
 
-  const inputRef = useRef(null);
-  useEffect(() => {});
   return (
     <div className={styles.form}>
       <form
@@ -38,7 +36,6 @@ export const Form = ({ title }) => {
           maxLength={30}
           pattern="^[A-Za-zа-яА-Я\s]+$"
           title="Any symbols and digits are not permitted"
-          ref={inputRef}
         />
         <input
           className={styles.form__input}
