@@ -1,4 +1,5 @@
 @use '../../styles/elementVariables.scss';
+@use '../../styles/fontVariables.scss';
 
 .button {
   border: none;
@@ -7,5 +8,9 @@
   @include elementVariables.buttonShadow;
   background-color: #fff;
 
-  text-transform: uppercase;
+  @include fontVariables.submitFontStyles;
+
+  &:hover {
+    box-shadow: -2px 2px 7px 3px rgba(0, 0, 0, 0.25);
+  }
 }

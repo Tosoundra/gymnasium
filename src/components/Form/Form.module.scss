@@ -1,4 +1,5 @@
 @use '../../styles/fontVariables.scss';
+@use '../../styles/elementVariables.scss';
 
 .form {
   max-width: 418px;
@@ -26,36 +27,16 @@
   }
 
   &__input {
-    border: none;
-    border-bottom: 1px solid #a9a9a9;
-
+    @include elementVariables.formInputStyles;
     @include fontVariables.inputFontStyles;
-
-    &:focus {
-      outline: none;
-      border-color: rgba(255, 0, 0, 0.811);
-    }
-
-    &:invalid {
-      border-color: rgba(255, 0, 0, 0.811);
-    }
-
-    &:valid {
-      border-color: #32a852;
-    }
   }
 
   &__submit {
     margin: 0 auto;
     text-align: center;
-    border: none;
+
+    @include elementVariables.submitFormStyles;
     border-radius: 7px;
-    padding-block: 10px;
-    padding-inline: 35px;
-
-    color: #fff;
-    background-color: #ed6d2d;
-
     @include fontVariables.submitFontStyles;
   }
 

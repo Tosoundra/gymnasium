@@ -1,8 +1,8 @@
-import zelim from '../images/zelim.png';
-import max from '../images/max.png';
-import abdula from '../images/abdula.png';
-import muslim from '../images/muslim.png';
-import geo from '../images/geo.png';
+import zelim from '../images/zelim-min.png';
+import max from '../images/max-min.png';
+import abdula from '../images/abdula-min.png';
+import muslim from '../images/muslim-min.png';
+import geo from '../images/geo-min.png';
 
 export const mentors = [
   {

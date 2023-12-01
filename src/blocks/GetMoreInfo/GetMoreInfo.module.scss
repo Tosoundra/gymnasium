@@ -39,6 +39,7 @@
     padding-top: unset;
     padding: 50px 0;
     @include elementVariables.paddings;
+
     &__title {
       font-size: 30px;
       margin-bottom: 50px;
@@ -58,39 +59,15 @@
   gap: 60px 30px;
 
   &__input {
-    max-width: 372px;
-
-    border: none;
-    border-bottom: 1px solid #a9a9a9;
-
+    @include elementVariables.formInputStyles;
     @include fontVariables.inputFontStyles;
-
-    &:focus {
-      outline: none;
-      border-color: rgba(255, 0, 0, 0.811);
-    }
-
-    &:invalid {
-      border-color: rgba(255, 0, 0, 0.811);
-    }
-
-    &:valid {
-      border-color: #32a852;
-    }
   }
 
   &__submit {
-    width: 162px;
-
-    border: none;
-    border-radius: 49px;
-    padding: 10px;
-
-    color: #fff;
-    background-color: #ed6d2d;
-
+    @include elementVariables.submitFormStyles;
     @include fontVariables.submitFontStyles;
   }
+
   @media (max-width: 767px) {
     & {
       grid-template-columns: 1fr;

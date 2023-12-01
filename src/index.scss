@@ -20,7 +20,12 @@ button {
 
   &:hover {
     @include elementVariables.buttonOnHover;
+    @include elementVariables.buttonOnHoverChangeColor;
   }
+}
+
+a:hover {
+  color: #ed6d2d;
 }
 
 input::-webkit-outer-spin-button,

@@ -1,4 +1,5 @@
 @use '../../styles/elementVariables.scss';
+@use '../../styles/fontVariables.scss';
 
 .title-container {
   background-color: #000;
@@ -7,11 +8,8 @@
   &__title {
     text-align: center;
     color: #fff;
+    @include fontVariables.titleFontStyles;
 
-    font-size: 85px;
-    font-weight: 400;
-    line-height: 91px;
-    text-transform: uppercase;
     &::after {
       content: ' power';
       color: #ed6d2d;
@@ -30,7 +28,9 @@
 
 .componentWithMan {
   color: #fff;
-  background: url('../../assets/images/main_back_two.png') no-repeat center / cover;
+  // background: url('../../assets/images/main_back_two.png') no-repeat center / cover;
+  background: url('../../assets/images/main_back_two-min.png') no-repeat top / cover;
+
   @include elementVariables.paddings;
   padding-block: 150px;
 
@@ -47,12 +47,11 @@
 
   &__subtitle {
     margin-bottom: 74px;
+
     color: #fff;
-    font-family: HeadingNow-84Regular;
+    @include fontVariables.titleFontStyles;
     font-size: 28px;
-    font-weight: 400;
     line-height: 46.5px;
-    text-transform: uppercase;
   }
 
   &__list {

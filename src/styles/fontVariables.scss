@@ -1,5 +1,13 @@
+@mixin titleFontStyles {
+  font-family: HeadingNow-84Regular;
+  font-size: 85px;
+  font-weight: 400;
+  line-height: 91px;
+  text-transform: uppercase;
+}
+
 @mixin inputFontStyles {
-  font-family: GothaProRegular;
+  font-family: GothaProLight;
   font-size: 15px;
   font-weight: 400;
   line-height: 22.5px;

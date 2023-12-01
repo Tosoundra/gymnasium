@@ -40,6 +40,9 @@
     background: url('../../assets/images/button_icon.svg') no-repeat center / auto;
     background-color: #d9d9d9;
     padding: calc(43px / 2);
+    &:hover {
+      background-image: url('../../assets/images/button_icon_hover.svg');
+    }
     &:last-of-type {
       rotate: 180deg;
       margin-left: 15px;
@@ -58,8 +61,8 @@
     }
 
     &__list {
-    padding: unset;
-    padding-top: 10vmax;
+      padding: unset;
+      padding-top: 10vmax;
     }
   }
 }
