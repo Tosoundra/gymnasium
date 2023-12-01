@@ -4,7 +4,7 @@ import mainPicture from '../../assets/images/main_header_picture.png';
 import ellipse from '../../assets/images/Ellipse.png';
 import { Button } from '../../components/Button/Button';
 
-export const Header = ({ setIsPopupOpen }) => {
+export const Header = ({}) => {
   return (
     <header className={styles.header}>
       <img className={styles.header__logo} src={logo} alt="logo" />

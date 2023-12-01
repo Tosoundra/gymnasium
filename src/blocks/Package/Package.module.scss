@@ -38,7 +38,7 @@
     max-width: 100%;
     height: 229px;
     background-repeat: no-repeat;
-    background-position: 100% 40%;
+    background-position: 100% 25%;
     background-size: cover;
   }
 
@@ -115,7 +115,7 @@
     }
   }
 
-  @media (max-width: 348px) {
+  @media (max-width: 363px) {
     &__card {
       width: unset;
       max-width: 348px;

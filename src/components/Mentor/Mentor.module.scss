@@ -46,7 +46,7 @@
 
   @media (max-width: 767px) {
     & {
-      width: 45vmax;
+      width: 42vmax;
       min-height: 25vmax;
     }
 
@@ -59,7 +59,8 @@
     }
     &__list {
       gap: unset;
-      font-size: 8px;
+      font-size: 10px;
+      max-width: 100px;
     }
     &__image {
       width: 25vmax;
