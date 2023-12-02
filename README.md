@@ -1,8 +1,12 @@
-# React + Vite
+# Одностраничное приложение для спортивной школы Gymnasium
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Страница сделана по макету в фигме. В макете отсутствовала адаптация под различные типы устройств, в том числе для телефонов. Сайт разработан для сети спортивных школ Gymnasium.
+### Проект реализован на фреймворке React.
+### Официальная страница Gymnasium в интернете https://gmnsm.com/
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Signle-page application for sports school Gymnasium
+
+### The page is made according to the layout in Figma. The layout lacked adaptation for various types of devices, including phones. The site was developed for the Gymnasium network of sports schools.
+### The project was implemented on the React framework.
+### Official Gymnasium page on the Internet https://gmnsm.com/
