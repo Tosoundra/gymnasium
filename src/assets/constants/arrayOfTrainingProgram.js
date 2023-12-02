@@ -1,7 +1,7 @@
-import pic_1 from '../images/prog_img_1-1.png';
-import pic_2 from '../images/prog_img_1-2.png';
-import pic_3 from '../images/prog_img_1-3.png';
-import pic_4 from '../images/prog_img_1-4.png';
+import pic_1 from '../images/prog_img_1-1-min.png';
+import pic_2 from '../images/prog_img_1-2-min.png';
+import pic_3 from '../images/prog_img_1-3-min.png';
+import pic_4 from '../images/prog_img_1-4-min.png';
 
 export const arrayOfTrainingProgram = [
   {
