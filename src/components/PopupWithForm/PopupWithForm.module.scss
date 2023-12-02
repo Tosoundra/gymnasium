@@ -10,6 +10,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &__container {
+    padding-inline: 5%;
+  }
 }
 
 .popup_active {

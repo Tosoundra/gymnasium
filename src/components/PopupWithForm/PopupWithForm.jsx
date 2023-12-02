@@ -31,7 +31,9 @@ export const PopupWithForm = ({ isOpen, setIsPopupOpen }) => {
       onClick={closePopupOnOutsideClick}
       id="popup"
       className={`${styles.popup} ${isOpen && styles.popup_active}`}>
-      <Form title="BOOK A TRIAL CLASS" setIsPopupOpen={setIsPopupOpen} />
+      <div className={styles.popup__container}>
+        <Form title="BOOK A TRIAL CLASS" setIsPopupOpen={setIsPopupOpen} />
+      </div>
     </div>
   );
 };

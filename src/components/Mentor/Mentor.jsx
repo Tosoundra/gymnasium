@@ -24,7 +24,7 @@ export const Mentor = ({ mentor, setCardWidth }) => {
             })}
           </ul>
         </div>
-        <img className={styles.mentor__image} src={mentor.img} alt={mentor.name} loading="lazy" />
+        <img className={styles.mentor__image} src={mentor.img} alt={mentor.name} />
       </div>
     </li>
   );
