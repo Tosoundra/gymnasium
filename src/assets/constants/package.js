@@ -1,5 +1,5 @@
-import babyBJJ from '../images/baby_bjj-min.png';
-import bjj from '../images/bjj-min.png';
+import babyBJJ from '../images/baby_bjj-min-comp.png';
+import bjj from '../images/bjj-min-comp.png';
 import adults from '../images/adults.jpeg';
 
 export const packages = [

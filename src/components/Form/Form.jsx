@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import styles from './Form.module.scss';
 import { PopupFeedbackContext, PopupWithFormContext } from '../../App';
 
@@ -6,16 +6,25 @@ export const Form = ({ title }) => {
   const setIsPopupWithFeedbackOpen = useContext(PopupFeedbackContext);
   const setIsPopupOpen = useContext(PopupWithFormContext);
 
-  const [nameValue, setNameValue] = useState('');
-  const [emailValue, setEmailValue] = useState('');
-  const [mobileValue, setMobileValue] = useState('');
-  const [ageValue, setAgeValue] = useState('');
+  const collectAndSendDataForm = (e) => {
+    const form = e.target;
+    const data = new FormData(form);
+    
+    // Enter here correct server address
+    fetch('http://test/', {
+      method: form.method,
+      headers: { 'Content-Type': 'multipart/form-data' },
+      body: data,
+    });
+  };
 
   return (
     <div className={styles.form}>
       <form
+        method="POST"
         onSubmit={(e) => {
           e.preventDefault();
+          collectAndSendDataForm(e);
           setIsPopupOpen(false);
           setIsPopupWithFeedbackOpen(true);
         }}
@@ -23,10 +32,6 @@ export const Form = ({ title }) => {
         <h1 className={styles.form__title}>{title}</h1>
         <input
           className={styles.form__input}
-          value={nameValue}
-          onChange={(e) => {
-            setNameValue(e.target.value);
-          }}
           type="text"
           placeholder="Name"
           name="name"
@@ -39,10 +44,6 @@ export const Form = ({ title }) => {
         />
         <input
           className={styles.form__input}
-          value={emailValue}
-          onChange={(e) => {
-            setEmailValue(e.target.value);
-          }}
           type="email"
           placeholder="E-mail"
           name="email"
@@ -51,10 +52,6 @@ export const Form = ({ title }) => {
         />
         <input
           className={styles.form__input}
-          value={mobileValue}
-          onChange={(e) => {
-            setMobileValue(e.target.value);
-          }}
           type="tel"
           placeholder="Mobile number"
           name="mobile"
@@ -66,10 +63,6 @@ export const Form = ({ title }) => {
         />
         <input
           className={styles.form__input}
-          value={ageValue}
-          onChange={(e) => {
-            setAgeValue(e.target.value);
-          }}
           type="number"
           placeholder="Age"
           name="age"
@@ -84,8 +77,8 @@ export const Form = ({ title }) => {
           name="location"
           id="location"
           required>
-          <option value="palmJumeirah">Palm Jumeirah</option>
-          <option value="downtown">Downtown</option>
+          <option value="Palm Jumeirah">Palm Jumeirah</option>
+          <option value="Downtown">Downtown</option>
         </select>
         <button className={styles.form__submit} type="submit">
           Book Now
