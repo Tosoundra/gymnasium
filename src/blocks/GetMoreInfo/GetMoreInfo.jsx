@@ -5,10 +5,17 @@ import { PopupFeedbackContext } from '../../App';
 export const GetMoreInfo = () => {
   const setIsPopupOpen = useContext(PopupFeedbackContext);
 
-  const [nameValue, setNameValue] = useState('');
-  const [emailValue, setEmailValue] = useState('');
-  const [mobileValue, setMobileValue] = useState('');
-  const [ageValue, setAgeValue] = useState('');
+  const collectAndSendDataForm = (e) => {
+    const form = e.target;
+    const data = new FormData(form);
+
+    // Enter here correct server address
+    fetch('http://test/', {
+      method: form.method,
+      headers: { 'Content-Type': 'multipart/form-data' },
+      body: data,
+    });
+  };
 
   return (
     <section className={styles.getMoreInfo}>
@@ -17,17 +24,15 @@ export const GetMoreInfo = () => {
         IF YOU STILL HAVE <br /> QUESTIONS,
       </h3>
       <form
+      method='POST'
         onSubmit={(e) => {
           e.preventDefault();
+          collectAndSendDataForm(e)
           setIsPopupOpen(true);
         }}
         className={styles.form}>
         <input
           className={styles.form__input}
-          value={nameValue}
-          onChange={(e) => {
-            setNameValue(e.target.value);
-          }}
           type="text"
           placeholder="Name"
           name="name"
@@ -36,14 +41,10 @@ export const GetMoreInfo = () => {
           minLength={2}
           maxLength={30}
           pattern="^[A-Za-zа-яА-Я\s]+$"
-          title="Any symbols and digits are not permitted"
+          title="Any symbols and digits are not allowed"
         />
         <input
           className={styles.form__input}
-          value={emailValue}
-          onChange={(e) => {
-            setEmailValue(e.target.value);
-          }}
           type="email"
           placeholder="E-mail"
           name="email"
@@ -52,10 +53,6 @@ export const GetMoreInfo = () => {
         />
         <input
           className={styles.form__input}
-          value={mobileValue}
-          onChange={(e) => {
-            setMobileValue(e.target.value);
-          }}
           type="tel"
           placeholder="Mobile number"
           name="mobile"
@@ -63,14 +60,10 @@ export const GetMoreInfo = () => {
           maxLength={13}
           required
           pattern="^(971|0)?(50|51|52|55|56|58|2|3|4|6|7|9)\d{7}$"
-          title={`971501234567, 0501234567, 025555555, 045678912 are permitted`}
+          title={`971501234567, 0501234567 type phone number.`}
         />
         <input
           className={styles.form__input}
-          value={ageValue}
-          onChange={(e) => {
-            setAgeValue(e.target.value);
-          }}
           type="number"
           placeholder="Age"
           name="age"
@@ -85,8 +78,9 @@ export const GetMoreInfo = () => {
           name="location"
           id="location"
           required>
-          <option value="palmJumeirah">Palm Jumeirah</option>
-          <option value="downtown">Downtown</option>
+          <option value="Palm Jumeirah">Palm Jumeirah</option>
+          <option value="Downtown">Downtown</option>
+          <option value="JBR">JBR</option>
         </select>
         <div></div>
         <button className={styles.form__submit} type="submit">

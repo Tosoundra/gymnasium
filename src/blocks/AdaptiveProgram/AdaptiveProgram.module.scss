@@ -92,6 +92,9 @@
   }
 
   @media (max-width: 767px) {
+    &__container {
+      @include elementVariables.paddings;
+    }
     &__navigation {
       display: grid;
       grid-template-columns: repeat(2, 1fr);

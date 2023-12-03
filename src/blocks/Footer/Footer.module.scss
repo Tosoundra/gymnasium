@@ -1,3 +1,5 @@
+@use '../../styles/elementVariables.scss';
+
 .footer {
   background-color: #000;
 
@@ -21,7 +23,20 @@
     gap: 15px;
     color: #fff;
   }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 
+    counter-reset: footer__list;
+  }
+  &__element {
+    counter-increment: footer__list;
+
+    &::before {
+      content: counter(footer__list) ') ';
+    }
+  }
   &__contacts {
     display: flex;
     flex-direction: column;
@@ -62,6 +77,9 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 22.5px;
+    @media (max-width: 767px) {
+      margin-top: 50px;
+    }
   }
 
   @media (max-width: 767px) {
@@ -69,7 +87,7 @@
       width: fit-content;
       margin: auto;
       flex-direction: column;
-      padding-left: 10px;
+      @include elementVariables.paddings;
     }
     &__terms {
       margin: unset;

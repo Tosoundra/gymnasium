@@ -36,6 +36,7 @@
   }
 
   @media (max-width: 767px) {
+    max-width: 372px;
     padding-top: unset;
     padding: 50px 0;
     @include elementVariables.paddings;

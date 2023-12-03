@@ -9,7 +9,7 @@ export const Form = ({ title }) => {
   const collectAndSendDataForm = (e) => {
     const form = e.target;
     const data = new FormData(form);
-    
+
     // Enter here correct server address
     fetch('http://test/', {
       method: form.method,
@@ -40,7 +40,7 @@ export const Form = ({ title }) => {
           minLength={2}
           maxLength={30}
           pattern="^[A-Za-zа-яА-Я\s]+$"
-          title="Any symbols and digits are not permitted"
+          title="Any symbols and digits are not allowed"
         />
         <input
           className={styles.form__input}
@@ -59,7 +59,7 @@ export const Form = ({ title }) => {
           maxLength={13}
           required
           pattern="^(971|0)?(50|51|52|55|56|58|2|3|4|6|7|9)\d{7}$"
-          title={`971501234567, 0501234567, 025555555, 045678912 are permitted`}
+          title={`971501234567, 0501234567 type phone number.`}
         />
         <input
           className={styles.form__input}
@@ -79,6 +79,7 @@ export const Form = ({ title }) => {
           required>
           <option value="Palm Jumeirah">Palm Jumeirah</option>
           <option value="Downtown">Downtown</option>
+          <option value="JBR">JBR</option>
         </select>
         <button className={styles.form__submit} type="submit">
           Book Now

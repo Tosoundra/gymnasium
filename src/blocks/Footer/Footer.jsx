@@ -9,13 +9,16 @@ export const Footer = ({}) => {
       <div className={styles.footer__container}>
         <address className={styles.footer__address}>
           <img className={styles.footer__logo} src={logo} alt="logo" />
-          Our Locations
-          <p>
-            1) Mezzanine (M) Floor, <br /> Golden Mile 7, Palm Jumeirah, Dubai
-          </p>
-          <p>
-            2) Second Floor, <br /> Burj Vista, Downtown, Dubai
-          </p>
+          <ol className={styles.footer__list}>
+            Our Locations
+            <li className={styles.footer__element}>
+              Mezzanine (M) Floor, <br /> Golden Mile 7, Palm Jumeirah, Dubai
+            </li>
+            <li className={styles.footer__element}>
+              Second Floor, <br /> Burj Vista, Downtown, Dubai
+            </li>
+            <li className={styles.footer__element}>Rimal 3, JBR, Dubai</li>
+          </ol>
           <a href="https://gmnsm.com/doc/terms_conditions.pdf" className={styles.footer__terms}>
             TERMS AND CONDITIONS
           </a>
