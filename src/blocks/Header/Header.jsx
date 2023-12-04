@@ -22,14 +22,16 @@ export const Header = ({}) => {
             Master martial arts by the hands of veteran trainers
           </li>
         </ul>
-        <div className={styles.header__address}>
-          <p>
+        <address className={styles.header__address}>
+          <li>
             Mezzanine (M) Floor, <br /> Golden Mile 7, Palm Jumeirah, Dubai
-          </p>
-          <p>
+          </li>
+          <li>
             Second Floor, <br /> Burj Vista, Downtown, Dubai
-          </p>
-        </div>
+          </li>
+          <li>Rimal 3, JBR, Dubai</li>
+          <ol></ol>
+        </address>
 
         <Button title="Start today" />
       </div>

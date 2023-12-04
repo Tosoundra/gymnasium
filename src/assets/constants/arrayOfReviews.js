@@ -11,7 +11,7 @@ export const arrayOfReviews = [
   },
   {
     name: 'Raghda Ahmed',
-    text: 'Great staff, great with kidss',
+    text: 'Great staff, great with kids',
     color: '#638D74',
   },
   {

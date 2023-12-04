@@ -15,11 +15,7 @@ export const mentors = [
     awards: ['BJJ Black belt', 'ACB JJ World Champ', 'AJP Europe Continental Pro medalist'],
     img: max,
   },
-  {
-    name: 'Abdula',
-    awards: ['BJJ Purple belt', '20 years Judo experience', 'Self Defense Instructor'],
-    img: abdula,
-  },
+
   {
     name: 'Muslim',
     awards: [
@@ -28,10 +24,5 @@ export const mentors = [
       'Arabic Speaker',
     ],
     img: muslim,
-  },
-  {
-    name: 'Geo',
-    awards: ['BJJ Brown belt', 'Switzerland, Italy, Cyprus, Russia AJP Champion'],
-    img: geo,
   },
 ];
