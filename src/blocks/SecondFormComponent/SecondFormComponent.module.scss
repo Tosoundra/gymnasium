@@ -39,8 +39,7 @@
     font-weight: 300;
     line-height: 55.5px;
     text-transform: uppercase;
-    &::after {
-      content: ' Future Generations';
+    & > * {
       color: #ed6d2d;
       font-family: HeadingNow-84Regular;
       font-weight: 400;
@@ -54,8 +53,7 @@
     font-weight: 300;
     line-height: 27px;
     text-transform: uppercase;
-    &::after {
-      content: ' physically and mentally.';
+    & > * {
       font-family: HeadingNow-84Regular;
     }
   }
