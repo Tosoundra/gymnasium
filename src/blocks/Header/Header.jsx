@@ -34,7 +34,7 @@ export const Header = ({}) => {
 
         <Button title="Start today" />
       </div>
-      {/* <img className={styles.header__ellipse} src={ellipse} alt="ellipse" /> */}
+
       <img className={styles.header__picture} src={mainPicture} alt="main picture" />
     </header>
   );
