@@ -1,7 +1,6 @@
 import styles from './Header.module.scss';
 import logo from '../../assets/images/logo.svg';
-import mainPicture from '../../assets/images/main_header_picture.png';
-import ellipse from '../../assets/images/Ellipse.png';
+import mainPicture from '../../assets/images/backgroundPicture.png';
 import { Button } from '../../components/Button/Button';
 
 export const Header = ({}) => {
@@ -35,7 +34,7 @@ export const Header = ({}) => {
 
         <Button title="Start today" />
       </div>
-      <img className={styles.header__ellipse} src={ellipse} alt="ellipse" />
+      {/* <img className={styles.header__ellipse} src={ellipse} alt="ellipse" /> */}
       <img className={styles.header__picture} src={mainPicture} alt="main picture" />
     </header>
   );
